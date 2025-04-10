@@ -79,7 +79,6 @@ public class Main {
         manager.updateTask(subtask2);
 
         Epic updatedEpic2 = manager.getEpicById(epic2.getId());
-        updatedEpic2.setStatus(manager.calculateEpicStatus(updatedEpic2));
         System.out.println("Статус эпика 2 после завершения всех подзадач: " + updatedEpic2.getStatus());
 
         System.out.println("\n8. Удаление всех задач, эпиков и подзадач");
